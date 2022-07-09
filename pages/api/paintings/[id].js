@@ -7,9 +7,10 @@ export default async function handler(req, res) {
     query: { id },
     cookies
   } = req;
+
   const token = cookies.token
 
-  await dbConnect();
+ await dbConnect();
 
   if (method === "GET") {
     try {

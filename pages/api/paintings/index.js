@@ -5,8 +5,8 @@ export default async function handler(req, res) {
   const { method, cookies } = req;
 
   const token = cookies.token
-
-  dbConnect();
+  
+  await dbConnect();
 
   if (method === "GET") {
     try {
@@ -26,7 +26,7 @@ export default async function handler(req, res) {
       res.status(201).json(painting);
     } catch (err) {
       res.status(500).json(err);
-      console.log("error in POST")
+      console.log("error in POST?")
     }
   }
 }

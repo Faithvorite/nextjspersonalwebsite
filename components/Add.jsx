@@ -49,7 +49,7 @@ const Add = ({ setClose }) => {
       setClose(true);
     } catch (err) {
       console.log(err);
-      console.log("error in Add")
+      console.log("error in Add !!")
     }
   };
 

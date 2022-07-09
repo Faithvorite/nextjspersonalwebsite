@@ -1,26 +1,29 @@
 .container {
-    height: 50px;
-    padding: 0px 50px;
+    height: 60px;
+    padding:  0rem .75rem;
+    padding-top: .5rem;
     background-color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: sticky;
+    position: sticky !important;
     top: 0;
     z-index: 999;
   }
   
   .logo {
-    margin-right: 30%;
+    flex: 1;
+    padding-left: .5rem;
     color: black;
     letter-spacing: 2px;
     font-weight: 500;
     text-transform: uppercase;
+
   }
   
   .items {
     display: flex;
-    flex: 1;
+    flex: 2;
     align-items: center;
     justify-content: space-between;
     letter-spacing: 2px;
@@ -40,38 +43,38 @@
     position: relative;
   }
   .cart {
-    font-size: 1.75rem;
     cursor: pointer;
+    height: 1.25rem;
     position: relative;
-    
   }
 
   .counter {
     position: absolute;
-    top:-1px;
-    right: -7px;
-    height: .75rem;
+    top:-10px;
+    right:-5px;
+    height: .85rem;
     width: .75rem;
-    padding: 2px;
+    padding: 3px;
     font-size: .6rem;
-    background-color: black;
-    color: white;
+    font-weight: bold;
+    color: black;
     border-radius: 50%;
-    display: flex;
+    
     align-items: center;
     justify-content: center;
-
-
+    transition: 1s;
   }
 
-
+.counter:active {
+  font-size: 100px;
+}
   
   @media screen and (max-width:480px) {
-    .item:nth-child(2) {
-      display: none;
-    }
-  
-    .item:nth-child(1) {
-      flex: 3;
-    }
+   .logo {
+    flex: 1;
+
+   }
+   .items {
+    flex:3;
+   }
   }

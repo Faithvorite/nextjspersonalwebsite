@@ -11,6 +11,7 @@ import axios from "axios";
 import { useRouter } from "next/router";
 import { reset } from "../redux/cartSlice";
 import OrderDetail from "../components/OrderDetail";
+import { removeFromCart } from "../redux/cartSlice";
 
 const Cart = () => {
   const cart = useSelector((state) => state.cart);
@@ -33,6 +34,24 @@ const Cart = () => {
       console.log(err);
     }
   };
+
+  const removeItem = async (painting) => {
+    return dispatch(removeFromCart(painting));
+  };
+
+  const emptyCart = () => {
+    return dispatch(reset());
+  }
+  // useEffect(() => {
+  //   const localStorageCartData = localStorage.getItem("localStorageCartData");
+  //   if (localStorageCartData) {
+  //     state.cart = JSON.parse(localStorageCartData); 
+  //   }
+  // }, [])
+
+  // useEffect(() => {
+  //   localStorage.setItem("localStorageCartData", JSON.stringify(cart))
+  // });
 
   // Custom component to wrap the PayPalButtons and handle currency changes
   const ButtonWrapper = ({ currency, showSpinner }) => {
@@ -94,15 +113,17 @@ const Cart = () => {
   return (
     <div className={styles.container}>
       <div className={styles.left}>
+        <button className={styles.deleteAllBtn} onClick={()=>emptyCart()}>Empty cart</button>
         <table className={styles.table}>
           <tbody>
             <tr className={styles.trTitle}>
               <th>Product</th>
               <th>Name</th>
-              <th>Extras</th>
+              <th></th>
               <th>Price</th>
-              <th>Quantity</th>
+              <th>Qty</th>
               <th>Total</th>
+              <th>X</th>
             </tr>
           </tbody>
           <tbody>
@@ -138,6 +159,9 @@ const Cart = () => {
                   <span className={styles.total}>
                     ${painting.price * painting.quantity}
                   </span>
+                </td>
+                <td>
+                  <button onClick={()=> removeItem(painting)}className={styles.deleteBtn}>X</button>
                 </td>
               </tr>
             ))}

@@ -1,23 +1,40 @@
 .container {
     display: flex;
-    flex-direction: column;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/img/Art/deadbridge.JPG) center/cover no-repeat fixed;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/img/Art/deadbridge.JPG) center/cover no-repeat fixed;
     background-size: cover;
-    
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 100px 0px ;
 
+  }
+  .seeMore  {
+    display: flex;
+ margin-bottom: 50px;
+  }
+.btn {
+    padding:1rem 2rem;
+    border: none;
+    margin: 0 1rem;
+    text-transform: uppercase;
+  }
+
+  .btn:hover {
+    border-radius: 15px;
   }
   .imgcontainer {
-    height: 70vh;
-    width: 50vw; 
     position: relative;
-
+    flex: 1;
+    height: 300px;
+    width: 300px;
+    margin-left: 25px;
   }
   .img {
-    
     object-fit: cover;
     object-position: center;
+   
 
 }
   .aboutme {
@@ -25,41 +42,60 @@
     display: flex;
     align-items: center;
     text-align: center;
-
-    margin: 40px;
+    flex: 2;
+    
     
   }
 
 
   .describeme {
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-weight: 500;
     margin: 40px;
+    flex: 1;
+    text-align: justify;
   }
 
   .contactme {
     color: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: justify;
-    margin: 40px;
+    text-align: left;
     letter-spacing: 2px;
-    padding: 50px;
+    flex: 1;
   }
+.icons {
+  display: flex;
+  color: white;
 
+}
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 25px;
+  color: white;
+  font-weight: 700;
+
+}
+.icon {
+  height: 50px;
+  width: 50px;
+  margin: 10px 30px;
+  cursor: pointer;
+}
+.icon:hover {
+  transform: translateY(-10px);
+}
   .newsletterwrapper{
-    height: 60vh;
-    
-    padding: 5rem 0;
+    height: 30vh;
+    width: 100%;
+flex:2;
     text-align: center;
+    margin-bottom: 70px;
 }
-.newslettertitle{
-    font-size: 2rem;
-    letter-spacing: 2px;
-    color: #fff;
-    margin-bottom: 2rem;
-}
+
 .formcontrol{
     font-size: 1rem;
     background: transparent;
@@ -94,8 +130,9 @@
 }
 
 @media screen and (max-width: 680px){
-  .aboutme {
-    display: flex;
+
+  .container{
     flex-direction: column;
   }
+  
 }

@@ -18,14 +18,15 @@
     position: relative;
     height: 45vh;
     width: 30vw;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+    
+}
+.imgcontainer:hover {
+    box-shadow: 0 2px 7px rgba(0, 0, 0, .5);
 }
 .img {
     
     object-fit: cover;
     object-position: center;
-
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
     cursor: pointer;
     
 

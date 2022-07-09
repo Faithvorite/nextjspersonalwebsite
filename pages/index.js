@@ -5,6 +5,7 @@ import Add from "../components/Add";
 import AddButton from "../components/AddButton";
 import Featured from "../components/Featured";
 import Gallery from "../components/Gallery";
+import NewFeatured from "../components/NewFeatured";
 import styles from "../styles/Home.module.css";
 
 export default function Home({ gallery, admin }) {
@@ -20,6 +21,7 @@ export default function Home({ gallery, admin }) {
       {admin && <AddButton setClose={setClose} />}
       <Gallery gallery={gallery} />
       {!close && <Add setClose={setClose} />}
+      <NewFeatured />
     </div>
   );
 }

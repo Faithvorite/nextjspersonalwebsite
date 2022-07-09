@@ -1,10 +1,11 @@
 .container{
-    height: calc(100vh - 100px);
+    padding: 20px;
     display: flex;
+    background-color: white;
 }
 
 .left {
-    flex: 1;
+    flex:1;
     height: 100%;
     display: flex;
     align-items: center;
@@ -13,14 +14,15 @@
 
 .right {
     flex: 1;
-    padding: 20px;
+  
 
 }
 
 .imgContainer{
-    width: 80%;
-    height: 80%;
+    width: 50vw;
+    height: 85vh;
     position: relative;
+    margin: 2rem;
 }
 
 .img{
@@ -28,15 +30,29 @@
 }
 
 .title {
+    font-size: 2rem;
     text-transform: uppercase;
     font-weight: 700;
+    margin-top: 5rem;
 }
+.price:hover {
+    font-size: 25px;
+}
+.desc {
+    letter-spacing: 1.5px;
+    margin: 2rem 0rem;
+}
+.choose {
+    font-size: .8rem;
+}
+
 .sizes{
-    width: 40%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     position: relative;
     align-items: center;
+    margin-bottom: 100px;
 }
 .size {
     margin: 10px;
@@ -88,17 +104,46 @@
   }
 
   .quantity {
-      width: 30px;
+    text-align: center;
+      width: 40px;
       height: 30px;
 
   }
 
   .button {
-      height: 30px;
+      height: 2rem;
+      width: 10rem;
       margin-left: 10px;
-      background-color: gray;
+      background-color: grey;
       color: white;
       border: none;
       cursor: pointer;
       font-weight: 500;
+      transition: 0s .3s ease-in-out;
+  }
+.button:active {
+    background-color: black;
+    transition: 0s ease-in-out;
+}
+  @media screen and (max-width: 680px){
+    .container {
+        padding: 5rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .left{
+        flex: 1;
+    }
+    .imgContainer{
+        height: 70vh;
+        width: 85vw;
+
+
+    }
+    .right{
+        flex: 1;
+    }
+    .sizes{
+        width: 100%;
+    }
   }

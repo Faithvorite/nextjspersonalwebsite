@@ -1,7 +1,9 @@
 .container {
-    padding: 50px;
+    padding: 30px;
     display: flex;
-    align-items: center;
+   align-items: center;
+   width: 100%;
+   justify-content: center;
   }
   
   .left {
@@ -10,6 +12,10 @@
   
   .right {
     flex: 1;
+    position:sticky;
+    top: 30px;
+    padding: 40px;
+    
   }
   
   .imgContainer {
@@ -55,64 +61,33 @@
     cursor: pointer;
     margin-top: 20px;
   }
+
+  .deleteAllBtn {
+    border: none;
+    background-color: white;
+    text-decoration: underline;
+    cursor: pointer;
+    padding-left: 70px;
+  }
   
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 800px) {
     .container {
       flex-direction: column;
-      padding: 20px;
+      overflow-x:hidden;
+      align-items: center;
     }
-  
     .table {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      width: 100vw;
+      border-spacing: 5px;
     }
-  
-    .trTitle {
-      display: none;
+    .left {
+      flex: 1;
     }
-  
-    .tr {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 20px;
-    }
-  
-    .imgContainer {
-      width: 35vw;
-      height: 35vw;
-    }
-  
-    .name,
-    .total {
-      font-size: 24px;
-    }
-  
-    .extras,
-    .price,
-    .quantity {
-      font-size: 22px;
-    }
-  
-    .price::before {
-      content: "Price: ";
-      font-weight: 500;
-    }
-    .quantity::before {
-      content: "Quantity: ";
-      font-weight: 500;
-    }
-    .total::before {
-      content: "Total: ";
-      font-weight: 500;
-    }
-  
-    .wrapper {
-      width: 100%;
-    }
+  .right {
+    flex: 1;
+    width: 100%;
+  }
+
   }
   
   .paymentMethods {

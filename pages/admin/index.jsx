@@ -1,12 +1,15 @@
 import axios from "axios";
 import Image from "next/image";
 import { useState } from "react";
+import EditButton from "../../components/EditButton";
 import styles from "../../styles/Admin.module.css";
+import Edit from "../../components/Edit";
 
 const Index = ({ orders, paintings }) => {
   const [gallery, setGallery] = useState(paintings);
   const [orderList, setOrderList] = useState(orders);
   const status = ["preparing", "on the way", "delivered"];
+  const [closeEdit, setCloseEdit] = useState(true);
 
   const handleDelete = async (id) => {
     console.log(id);
@@ -67,7 +70,8 @@ const Index = ({ orders, paintings }) => {
                 <td>{painting.title}</td>
                 <td>${painting.prices[0]}</td>
                 <td>
-                  <button className={styles.button}>Edit</button>
+                {/* {<EditButton setCloseEdit={setCloseEdit} />}
+                {!closeEdit && <Edit setCloseEdit={setCloseEdit} />} */}
                   <button
                     className={styles.button}
                     onClick={() => handleDelete(painting._id)}

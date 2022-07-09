@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from "../styles/Gallery.module.css";
 import Artpiece from "./Artpiece.jsx";
+import { motion } from "framer-motion";
 
 const Gallery = ({ gallery }) => {
   return (

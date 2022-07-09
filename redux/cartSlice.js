@@ -13,13 +13,22 @@ const cartSlice = createSlice({
       state.quantity += 1;
       state.total += action.payload.price * action.payload.quantity;
     },
+    removeFromCart: (state, action) => {
+      const nextCartItems = state.paintings.filter(
+        (painting) => painting._id !== action.payload._id
+      );
+      state.paintings = nextCartItems;
+      state.quantity -= 1;
+      state.total -= action.payload.price * action.payload.quantity;
+      
+    },
     reset: (state) => {
       state.paintings = [];
       state.quantity = 0;
-      state.total = 0;
+      state.total = 0; 
     },
   },
 });
 
-export const { addPainting, reset } = cartSlice.actions;
+export const { addPainting, removeFromCart, reset } = cartSlice.actions;
 export default cartSlice.reducer;
