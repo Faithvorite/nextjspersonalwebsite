@@ -60,7 +60,7 @@ const NewFeatured = () => {
           {images.map((images, i) => (
             <div className={styles.featuredContainer} key={i}>
               <div className={styles.imgContainer} key={i}>
-              <Image src={images.img} key={i} alt="" layout="fill" objectFit="cover"/>
+              <img className={styles.img} src={images.img} key={i} />
               </div>
               <div className={styles.textContainer}>
                 <div className={styles.desc}>{images.desc}</div>
