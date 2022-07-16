@@ -27,10 +27,11 @@
 }
 .aboutme{
     text-align: justify;
-    padding: 70px 50px 0px 50px;
+    padding: 70px 20px 0px 20px;
     font-size: 20px;
-    column-count: 3;
+    column-count: 2;
     column-gap: 3rem;
+    min-width: 350px;
 }
 .doodle {
 position:fixed;

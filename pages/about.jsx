@@ -15,7 +15,7 @@ const about = () => {
 
     <div className={styles.aboutme}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus est assumenda sit in dolor atque dolore error rerum! Saepe, similique consequuntur debitis nihil deleniti iste atque ad deserunt voluptas amet.
     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem adipisci enim nostrum eius corrupti, alias iste, quod, consequatur itaque obcaecati deleniti error ducimus! Quasi explicabo amet possimus officiis est accusamus!
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eveniet eligendi voluptates est? Ab, reprehenderit quisquam ducimus eius quas officia commodi, doloribus accusantium distinctio ipsa sint exercitationem quasi, cupiditate temporibus?
+    
     </div>
 
     <Image className={styles.doodle} src="/img/art/paintingdoodle.png" alt="" width="500px" height="500px" />
