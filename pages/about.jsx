@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import styles from "../styles/About.module.css"
-import Me from "/img/art/me.jpg"
+import Me from "../public/img/Art/me.jpg"
 const about = () => {
   return (
     <div className={styles.bigcontainer}>
@@ -19,7 +19,7 @@ const about = () => {
     
     </div>
 
-    <Image className={styles.doodle} src="/img/art/paintingdoodle.png" alt="" width="500px" height="500px" />
+    <Image className={styles.doodle} src="../public/img/Art/me.jpg" alt="" width="500px" height="500px" />
     </div>
 
     </div>
