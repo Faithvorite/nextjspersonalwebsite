@@ -37,7 +37,7 @@ const NewFeatured = () => {
         review: " Incredible ",
         author: "-Minh Hong"
         },
-        {img: transparency ,
+        {img:{ transparency} ,
         review: " Incredible ",
         author: "-Minh Hong"
         },
