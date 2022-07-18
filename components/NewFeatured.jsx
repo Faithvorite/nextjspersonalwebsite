@@ -11,29 +11,29 @@ const NewFeatured = () => {
         {
         img:"/img/Art/horsetailfalls2.JPG",
         desc: '30" x 40" oil on canvas',
-        review: "Excellent! This painting has brought life into an empty room. So very happy with the result",
+        review: " Excellent! This painting has brought life into an empty room. So very happy with the result ",
         author: "-Minh Hong"
         },
         {
         img: "/img/Art/mistyroadframed.JPG",
         desc: "Oil painting",
-        review:' Outstanding!',
+        review:' Outstanding! ',
         author: "-Minh Hong"
         },
         {
         img: "/img/Art/unnamed.JPG",
         desc: "Oil painting",
-        review: "Top notch",
+        review: " Top notch ",
         author: "-Minh Hong"
         },
         {
         img:"/img/Art/hannahtote.JPG",
         desc: "Oil painting",
-        review: "Incredible",
+        review: " Incredible ",
         author: "-Minh Hong"
         },
         {img: "/img/Art/transparency.JPG",
-        review: "Incredible",
+        review: " Incredible ",
         author: "-Minh Hong"
         },
         {
