@@ -26,7 +26,7 @@
 }
 
 .img{
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .title {
@@ -60,23 +60,42 @@
     justify-content: center;
     text-align: center;
 }
-
-.small {
-   font-size: 1.5rem;
+  
+  .small {
+    font-size: 1.5rem;
     position: relative;
     cursor: pointer;
+    transition:0s .5s;
+    opacity: 60%;
   }
-  
+  .small:active{
+   
+    transition:0s;
+    opacity: 100%;
+  }
   .medium {
     font-size: 2rem;
     position: relative;
     cursor: pointer;
+    transition:0s .5s;
+    opacity: 60%;
   }
-  
+  .medium:active{
+   
+    transition:0s;
+    opacity: 100%;
+  }
   .large {
     font-size: 2.5rem;
     position: relative;
     cursor: pointer;
+    transition:0s .5s;
+    opacity: 60%;
+  }
+  .large:active{
+   
+    transition:0s;
+    opacity: 100%;
   }
   .number {
     position: absolute;

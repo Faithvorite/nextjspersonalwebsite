@@ -7,6 +7,8 @@ import { addPainting } from "../../redux/cartSlice";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { motion } from "framer-motion";
 import { useEffect } from 'react';
+import { AiOutlinePicture } from "react-icons/ai";
+
 
 const Painting = ({ painting }) => {
   const [price, setPrice] = useState(painting.prices[0]);
@@ -65,15 +67,15 @@ const Painting = ({ painting }) => {
       <div className={styles.choose}>Size</div>
       <div className={styles.sizes}>
         <div className={styles.size} onClick={()=> handleSize(0)}>
-          <div className={styles.small}>&#10064;</div>
+          <div className={styles.small}><AiOutlinePicture /></div>
           <span className={styles.number}>small</span>
         </div>
         <div className={styles.size} onClick={()=> handleSize(1)}>
-          <div className={styles.medium}>&#10064;</div>
+          <div className={styles.medium}><AiOutlinePicture /></div>
           <span className={styles.number}>medium</span>
         </div>
         <div className={styles.size} onClick={()=> handleSize(1)}>
-          <div className={styles.large}>&#10064;</div>
+          <div className={styles.large}><AiOutlinePicture /></div>
           <span className={styles.number}>large</span>
         </div>
     </div>
