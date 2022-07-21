@@ -112,22 +112,7 @@ flex:2;
 .formcontrol:focus{
     outline: none;
 }
-.formcontrol, .newsletterwrapper .btn-trans{
-    width: 50%;
-    margin: 1rem 0;
-}
-.newsletterwrapper .btntrans{
-    background: transparent;
-    border-color: gray;
-    font-size: 1.1rem;
-    padding: 20px;
-    color: white;
-    letter-spacing: 2px;
-}
-.newsletterwrapper .btntrans:hover{
-    background: #fff;
-    color: black;
-}
+
 
 @media screen and (max-width: 680px){
 
