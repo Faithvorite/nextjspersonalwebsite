@@ -11,43 +11,62 @@ const NewFeatured = () => {
         {
         img:"/img/Art/horsetailfalls2.JPG",
         desc: '30" x 40" oil on canvas',
-        review: "Excellent! This painting has brought life into an empty room. So very happy with the result",
+        review: " Excellent! This painting has brought life into an empty room.  ",
         author: "-Minh Hong"
         },
         {
         img: "/img/Art/mistyroadframed.JPG",
         desc: "Oil painting",
-        review:' Outstanding!',
+        review:' Exactly what we needed for our new house. ',
         author: "-Minh Hong"
         },
         {
         img: "/img/Art/unnamed.JPG",
         desc: "Oil painting",
-        review: "Top notch",
-        author: "-Minh Hong"
+        review: " Incredible talent. My prized possession. ",
+        author: "-Nick Richarte"
         },
         {
         img:"/img/Art/hannahtote.JPG",
         desc: "Oil painting",
-        review: "Incredible",
-        author: "-Minh Hong"
+        review: " Love it! ",
+        author: "-Hannah Gloria"
         },
-        {img: "/public/img/Art/transparency.JPG",
-        review: "Incredible",
-        author: "-Minh Hong"
+        {img: "/img/Art/transparency.JPG",
+        desc: "Oil painting",
+        review: " I had to have this painting. It's incredible. ",
+        author: "-Chris Aguilar"
         },
         {
-        img: "/public/img/Art/francelavendarfields.JPG",
-        review: "Incredible",
-        author: "-Minh Hong"
+        img: "/img/Art/francelavendarfields.JPG",
+        desc: "Oil painting",
+        review: " It's beautiful. ",
+        author: "-Gabby Maloney"
         },
+        {
+          img:"/img/Art/hannahtote.JPG",
+          desc: "Oil painting",
+          review: " Incredible ",
+          author: "-Minh Hong"
+          },
+          {img: "/img/Art/transparency.JPG",
+          desc: "Oil painting",
+          review: " Incredible ",
+          author: "-Minh Hong"
+          },
+          {
+          img: "/img/Art/francelavendarfields.JPG",
+          desc: "Oil painting",
+          review: " Incredible ",
+          author: "-Minh Hong"
+          },
     ];
 
     const handleArrow = (direction) => {
         if(direction==="l") {
-            setIndex(index !== 0 ? index-.5 : 2)
+            setIndex(index !== 0 ? index-1 : 2)
         } if (direction === "r") {
-            setIndex(index !== 2 ? index + .5 : 0)
+            setIndex(index !== 2 ? index + 1 : 0)
         }
     }
     
@@ -60,7 +79,7 @@ const NewFeatured = () => {
           {images.map((images, i) => (
             <div className={styles.featuredContainer} key={i}>
               <div className={styles.imgContainer} key={i}>
-              <Image src={images.img} key={i} alt="" layout="fill" objectFit="cover"/>
+              <Image src={images.img} key={i} alt="" layout="fill" objectFit="contain"/>
               </div>
               <div className={styles.textContainer}>
                 <div className={styles.desc}>{images.desc}</div>

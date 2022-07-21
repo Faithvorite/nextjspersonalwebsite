@@ -29,7 +29,7 @@
     width: 400vw;
     height: 100%;
     display: flex;
-    transition: all 1s ease-in-out;
+    transition: all 2s ease-in-out;
     background-color: white;
     align-items: center;
     justify-content: space-between;
@@ -40,12 +40,13 @@
 .featuredContainer{
     display: flex;
     flex-direction: column;
-    height: 80%;
+    height: 60%;
     background-color: rgb(240, 235, 235);
     margin: 20px;
     border-radius: 5%;
     padding: 10px;
-    
+    width: 30vw;
+    align-items: center;
     /* margin: 50px;
     padding: 10px; */
 
@@ -55,9 +56,9 @@
 }
 
 .imgContainer{
-    width: 30vw;
-    height: 70vh;
-    margin: 20px;
+    width: 100%;
+    height: auto;
+    margin: 10px;
     flex:3;
     position: relative;
 
@@ -83,18 +84,17 @@
    
 }
 .author {
-    font-style: bold;
-    text-align: right;
-    padding-right: 20px;
+    padding-top: 7px;
+    font-size: 12px;
     text-transform: uppercase;
 }
 .desc {
-    font-size: 13px;
+    font-size: 12px;
     margin-bottom: 10px;
     font-style: italic;
 }
 .review {
-    
+    font-size: 15px;
 }
 
 .title {
@@ -114,9 +114,16 @@
     /* .wrapper {
     width: 600vw;
     } */
-    .imgContainer{
+    .featuredContainer{
         width: 70vw;
-        height: 50vh;
+        min-width: 200px;
+        align-items: center;
+        padding:5px;
+        margin: 10px;
+    }
+    .imgContainer{
+        width: 100%;
+        height: 50%;
         margin: 5px;
         position: relative;
         
