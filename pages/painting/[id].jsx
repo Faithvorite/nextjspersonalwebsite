@@ -74,7 +74,7 @@ const Painting = ({ painting }) => {
           <div className={styles.medium}><AiOutlinePicture /></div>
           <span className={styles.number}>medium</span>
         </div>
-        <div className={styles.size} onClick={()=> handleSize(1)}>
+        <div className={styles.size} onClick={()=> handleSize(2)}>
           <div className={styles.large}><AiOutlinePicture /></div>
           <span className={styles.number}>large</span>
         </div>

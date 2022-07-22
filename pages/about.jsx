@@ -10,7 +10,7 @@ const about = () => {
     <div className={styles.container}>
       <div className={styles.imgcont}>
 
-    <Image className={styles.img} src={Me} alt="" width="300px" height="300px" />
+    <Image placeholder="blur" className={styles.img} src={Me} alt="" width="300px" height="300px" />
     <div className={styles.text}> <b>FAITH NGUYEN:</b><i> painter, designer, writer, creative</i>
     </div>
       </div>
@@ -20,7 +20,7 @@ const about = () => {
     
     </div>
 
-    <Image className={styles.doodle} src={doodle} alt="" width="500px" height="500px" />
+    <Image placeholder="blur" className={styles.doodle} src={doodle} alt="" width="500px" height="500px" />
     </div>
 
     </div>

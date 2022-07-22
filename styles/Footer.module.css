@@ -20,6 +20,8 @@
     margin: 0 1rem;
     text-transform: uppercase;
     background-color: whitesmoke;
+    min-height: 45px;
+    color: black;
   }
 
   .btn:hover {
@@ -105,6 +107,7 @@ flex:2;
     color: white;
     font-weight: 200;
     letter-spacing: 2px;
+    min-height: 45px;
 }
 .formcontrol::placeholder{
     color: gray;

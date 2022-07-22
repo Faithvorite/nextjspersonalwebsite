@@ -14,7 +14,7 @@
     justify-content: center;
 }
 .img{
- 
+    transition: 0.3s;
     object-fit: cover;
     
 }
@@ -36,4 +36,5 @@
 .doodle {
 position:fixed;
 right: 10px;
+transition: 0.3s;
 }

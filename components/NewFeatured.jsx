@@ -6,6 +6,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faQuoteLeft, faQuoteRight, faQuoteRightAlt } from '@fortawesome/free-solid-svg-icons';
 
 const NewFeatured = () => {
+  const loaderProp =({ src }) => {
+    return src;
+  }
     const [index,setIndex]= useState(0);
     const images = [
         {
@@ -79,7 +82,7 @@ const NewFeatured = () => {
           {images.map((images, i) => (
             <div className={styles.featuredContainer} key={i}>
               <div className={styles.imgContainer} key={i}>
-              <Image src={images.img} key={i} alt="" layout="fill" objectFit="contain"/>
+              <Image loader={loaderProp} src={images.img} key={i} alt="" layout="fill" objectFit="contain"/>
               </div>
               <div className={styles.textContainer}>
                 <div className={styles.desc}>{images.desc}</div>
