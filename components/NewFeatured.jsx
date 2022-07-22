@@ -12,53 +12,53 @@ const NewFeatured = () => {
     const [index,setIndex]= useState(0);
     const images = [
         {
-        img:"/img/Art/horsetailfalls2.JPG",
+        img:"/img/Art/horsetailfalls2.jpg",
         desc: '30" x 40" oil on canvas',
         review: " Excellent! This painting has brought life into an empty room.  ",
         author: "-Minh Hong"
         },
         {
-        img: "/img/Art/mistyroadframed.JPG",
+        img: "/img/Art/mistyroadframed.jpg",
         desc: "Oil painting",
         review:' Exactly what we needed for our new house. ',
         author: "-Minh Hong"
         },
         {
-        img: "/img/Art/unnamed.JPG",
+        img: "/img/Art/unnamed.jpg",
         desc: "Oil painting",
         review: " Incredible talent. My prized possession. ",
         author: "-Nick Richarte"
         },
         {
-        img:"/img/Art/hannahtote.JPG",
+        img:"/img/Art/hannahtote.jpg",
         desc: "Oil painting",
         review: " Love it! ",
         author: "-Hannah Gloria"
         },
-        {img: "/img/Art/transparency.JPG",
+        {img: "/img/Art/transparency.jpg",
         desc: "Oil painting",
         review: " I had to have this painting. It's incredible. ",
         author: "-Chris Aguilar"
         },
         {
-        img: "/img/Art/francelavendarfields.JPG",
+        img: "/img/Art/francelavendarfields.jpg",
         desc: "Oil painting",
         review: " It's beautiful. ",
         author: "-Gabby Maloney"
         },
         {
-          img:"/img/Art/hannahtote.JPG",
+          img:"/img/Art/hannahtote.jpg",
           desc: "Oil painting",
           review: " Incredible ",
           author: "-Minh Hong"
           },
-          {img: "/img/Art/transparency.JPG",
+          {img: "/img/Art/transparency.jpg",
           desc: "Oil painting",
           review: " Incredible ",
           author: "-Minh Hong"
           },
           {
-          img: "/img/Art/francelavendarfields.JPG",
+          img: "/img/Art/francelavendarfields.jpg",
           desc: "Oil painting",
           review: " Incredible ",
           author: "-Minh Hong"
