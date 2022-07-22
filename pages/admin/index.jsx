@@ -44,6 +44,8 @@ const Index = ({ orders, paintings }) => {
 
   return (
     <div className={styles.container}>
+      <AddButton setClose={setClose} />
+                  {!close && <Add setClose={setClose} />}
       <div className={styles.item}>
         <h1 className={styles.title}>paintings</h1>
         <table className={styles.table}>
@@ -80,8 +82,7 @@ const Index = ({ orders, paintings }) => {
                   >
                     Delete
                   </button>
-                  <AddButton setClose={setClose} />
-                  {!close && <Add setClose={setClose} />}
+                  
                 </td>
               </tr>
             </tbody>
