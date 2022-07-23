@@ -1,15 +1,14 @@
 import axios from "axios";
 import Head from "next/head";
 import { useState } from "react";
-import Add from "../components/Add";
-import AddButton from "../components/AddButton";
+
 import Featured from "../components/Featured";
 import Gallery from "../components/Gallery";
 import NewFeatured from "../components/NewFeatured";
 import styles from "../styles/Home.module.css";
 
-export default function Home({ gallery, admin }) {
-  const [close, setClose] = useState(true);
+export default function Home({ gallery}) {
+
   return (
     <div className={styles.container}>
       <Head>
@@ -18,9 +17,7 @@ export default function Home({ gallery, admin }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Featured />
-      {admin && <AddButton setClose={setClose} />}
       <Gallery gallery={gallery} />
-      {!close && <Add setClose={setClose} />}
       <NewFeatured />
     </div>
   );

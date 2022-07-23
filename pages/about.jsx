@@ -19,8 +19,10 @@ const about = () => {
     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem adipisci enim nostrum eius corrupti, alias iste, quod, consequatur itaque obcaecati deleniti error ducimus! Quasi explicabo amet possimus officiis est accusamus!
     
     </div>
+    <div className="doodlebox">
 
     <Image placeholder="blur" className={styles.doodle} src={doodle} alt="" width="500px" height="500px" />
+    </div>
     </div>
 
     </div>

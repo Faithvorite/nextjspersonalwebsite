@@ -67,16 +67,16 @@ const Painting = ({ painting }) => {
       <div className={styles.choose}>Size</div>
       <div className={styles.sizes}>
         <div className={styles.size} onClick={()=> handleSize(0)}>
-          <div className={styles.small}><AiOutlinePicture /></div>
-          <span className={styles.number}>small</span>
+          <div className={price === 100? styles.smallactive : styles.small}><AiOutlinePicture /></div>
+          <span className={styles.number}>16&quot;x24&quot;</span>
         </div>
         <div className={styles.size} onClick={()=> handleSize(1)}>
-          <div className={styles.medium}><AiOutlinePicture /></div>
-          <span className={styles.number}>medium</span>
+          <div className={price === 200 ? styles.mediumactive: styles.medium}><AiOutlinePicture /></div>
+          <span className={styles.number}>20&quot;x30&quot;</span>
         </div>
         <div className={styles.size} onClick={()=> handleSize(2)}>
-          <div className={styles.large}><AiOutlinePicture /></div>
-          <span className={styles.number}>large</span>
+          <div className={price === 300 ? styles.largeactive : styles.large}><AiOutlinePicture /></div>
+          <span className={styles.number}>24&quot;x36&quot;</span>
         </div>
     </div>
     <div className={styles.options}>
