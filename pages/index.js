@@ -1,8 +1,8 @@
 import axios from "axios";
 import Head from "next/head";
 import { useState } from "react";
-import AddButton from "../../components/AddButton";
-import Add from "../../components/Add";
+import AddButton from "../components/AddButton";
+import Add from "../components/Add";
 import Featured from "../components/Featured";
 import Gallery from "../components/Gallery";
 import NewFeatured from "../components/NewFeatured";
