@@ -46,7 +46,7 @@
         
 //       };
 
-//       await axios.post("http://localhost:3000/api/paintings", editPainting);
+//       await axios.post("http://:3000/api/paintings", editPainting);
 //       setCloseEdit(true);
 //     } catch (err) {
 //       console.log(err);

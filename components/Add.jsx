@@ -59,7 +59,7 @@ const Add = ({ setClose }) => {
         <span onClick={() => setClose(true)} className={styles.close}>
           X
         </span>
-        <h1>Add a new Pizza</h1>
+        <h1>Add a new Painting</h1>
         <div className={styles.item}>
           <label className={styles.label}>Choose an image</label>
           <input type="file" onChange={(e) => setFile(e.target.files[0])} />
@@ -86,19 +86,19 @@ const Add = ({ setClose }) => {
             <input
               className={`${styles.input} ${styles.inputSm}`}
               type="number"
-              placeholder="Small"
+              placeholder="16&quot;x24&quot;"
               onChange={(e) => changePrice(e, 0)}
             />
             <input
               className={`${styles.input} ${styles.inputSm}`}
               type="number"
-              placeholder="Medium"
+              placeholder="20&quot;x30&quot;"
               onChange={(e) => changePrice(e, 1)}
             />
             <input
               className={`${styles.input} ${styles.inputSm}`}
               type="number"
-              placeholder="Large"
+              placeholder="24&quot;x36&quot;"
               onChange={(e) => changePrice(e, 2)}
             />
           </div>
