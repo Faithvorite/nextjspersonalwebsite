@@ -28,7 +28,7 @@ const Add = ({ setClose }) => {
   const handleCreate = async () => {
     const data = new FormData();
     data.append("file", file);
-    data.append("upload_preset", "personalArt");
+    data.append("upload_preset", "uploads");
     try {
       const uploadRes = await axios.post(
         "https://api.cloudinary.com/v1_1/dkjolujle/image/upload",
@@ -49,7 +49,7 @@ const Add = ({ setClose }) => {
       setClose(true);
     } catch (err) {
       console.log(err);
-      console.log("error in Add !!")
+      console.log("error in Add !!!")
     }
   };
 
