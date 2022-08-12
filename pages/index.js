@@ -8,7 +8,7 @@ import Gallery from "../components/Gallery";
 import NewFeatured from "../components/NewFeatured";
 import styles from "../styles/Home.module.css";
 
-export default function Home({ gallery}) {
+export default function Home({ gallery, admin }) {
   const [close, setClose] = useState(true);
   return (
     <div className={styles.container}>
