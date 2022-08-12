@@ -7,7 +7,7 @@ import Edit from "../../components/Edit";
 import AddButton from "../../components/AddButton";
 import Add from "../../components/Add";
 
-const Index = ({ orders, paintings }) => {
+const Index = ({ orders, paintings, admin }) => {
   const [gallery, setGallery] = useState(paintings);
   const [orderList, setOrderList] = useState(orders);
   const status = ["preparing", "on the way", "delivered"];
