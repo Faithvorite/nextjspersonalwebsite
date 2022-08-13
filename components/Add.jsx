@@ -25,6 +25,7 @@ const Add = ({ setClose }) => {
     setExtraOptions((prev) => [...prev, extra]);
   };
 
+
   const handleCreate = async () => {
     const data = new FormData();
     data.append("file", file);
@@ -49,7 +50,7 @@ const Add = ({ setClose }) => {
       setClose(true);
     } catch (err) {
       console.log(err);
-      console.log("error in Add !!")
+      console.log("error in Add !!!")
     }
   };
 
@@ -86,19 +87,19 @@ const Add = ({ setClose }) => {
             <input
               className={`${styles.input} ${styles.inputSm}`}
               type="number"
-              placeholder="16&quot;x24&quot;"
+              placeholder="Small"
               onChange={(e) => changePrice(e, 0)}
             />
             <input
               className={`${styles.input} ${styles.inputSm}`}
               type="number"
-              placeholder="20&quot;x30&quot;"
+              placeholder="Medium"
               onChange={(e) => changePrice(e, 1)}
             />
             <input
               className={`${styles.input} ${styles.inputSm}`}
               type="number"
-              placeholder="24&quot;x36&quot;"
+              placeholder="Large"
               onChange={(e) => changePrice(e, 2)}
             />
           </div>
@@ -125,7 +126,7 @@ const Add = ({ setClose }) => {
             </button>
           </div>
           <div className={styles.extraItems}>
-          {extraOptions.map((option) => (
+            {extraOptions.map((option) => (
               <span key={option.text} className={styles.extraItem}>
                 {option.text}
               </span>
