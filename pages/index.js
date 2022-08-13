@@ -20,7 +20,7 @@ export default function Home({ gallery, admin }) {
       <Featured />
       {<AddButton setClose={setClose} />}
       <Gallery gallery={gallery} />
-                  {!close && <Add setClose={setClose} />}
+      {!close && <Add setClose={setClose} />}
       <NewFeatured />
     </div>
   );
