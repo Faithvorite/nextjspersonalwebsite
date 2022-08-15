@@ -46,7 +46,7 @@ const Add = ({ setClose }) => {
         
       };
 
-      await axios.post("https://nextjspersonalartwebsite.vercel.app/api/paintings", newPainting);
+      await axios.post("/paintings", newPainting);
       setClose(true);
     } catch (err) {
       console.log(err);
