@@ -11,7 +11,7 @@ const Login = () => {
 
   const handleClick = async () => {
     try {
-      await axios.post("/login", {
+      await axios.post("https://nextjspersonalartwebsite.vercel.app/login", {
         username,
         password,
       });

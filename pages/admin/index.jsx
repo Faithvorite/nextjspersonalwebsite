@@ -12,7 +12,7 @@ const Index = ({ orders, paintings }) => {
     console.log(id);
     try {
       const res = await axios.delete(
-        "/paintings/" + id
+        "https://nextjspersonalartwebsite.vercel.app/paintings/" + id
       );
       setGallery(gallery.filter((painting) => painting._id !== id));
     } catch (err) {
@@ -25,7 +25,7 @@ const Index = ({ orders, paintings }) => {
     const currentStatus = item.status;
 
     try {
-      const res = await axios.put("/orders/" + id, {
+      const res = await axios.put("https://nextjspersonalartwebsite.vercel.app/orders/" + id, {
         status: currentStatus + 1,
       });
       setOrderList([
@@ -130,8 +130,8 @@ export const getServerSideProps = async (ctx) => {
     };
   }
 
-  const paintingRes = await axios.get("/paintings");
-  const orderRes = await axios.get("/orders");
+  const paintingRes = await axios.get("https://nextjspersonalartwebsite.vercel.app/paintings");
+  const orderRes = await axios.get("https://nextjspersonalartwebsite.vercel.app/orders");
 
   return {
     props: {

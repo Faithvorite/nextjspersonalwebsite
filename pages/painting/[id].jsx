@@ -107,7 +107,7 @@ const Painting = ({ painting }) => {
 
 export const getServerSideProps = async ({ params }) => {
   const res = await axios.get(
-    `/paintings/${params.id}`
+    `https://nextjspersonalartwebsite.vercel.app/paintings/${params.id}`
   );
   return {
     props: {

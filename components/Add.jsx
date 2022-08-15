@@ -1,7 +1,6 @@
 import { useState } from "react";
 import styles from "../styles/Add.module.css";
 import axios from "axios";
-import { useRouter } from "next/router";
 
 const Add = ({ setClose }) => {
   const [file, setFile] = useState(null);
@@ -46,7 +45,7 @@ const Add = ({ setClose }) => {
         
       };
 
-      await axios.post("/paintings", newPainting);
+      await axios.post("https://nextjspersonalartwebsite.vercel.app/paintings", newPainting);
       setClose(true);
     } catch (err) {
       console.log(err);

@@ -25,7 +25,7 @@ const Cart = () => {
 
   const createOrder = async (data) => {
     try {
-      const res = await axios.post("/orders", data);
+      const res = await axios.post("https://nextjspersonalartwebsite.vercel.app/orders", data);
       if (res.status === 201) {
         dispatch(reset());
         router.push(`/orders/${res.data._id}`);
@@ -42,18 +42,6 @@ const Cart = () => {
   const emptyCart = () => {
     return dispatch(reset());
   }
-
-  //LOCAL STORAGE
-  // useEffect(() => {
-  //   const localStorageCartData = localStorage.getItem("localStorageCartData");
-  //   if (localStorageCartData) {
-  //     state.cart = JSON.parse(localStorageCartData); 
-  //   }
-  // }, [])
-
-  // useEffect(() => {
-  //   localStorage.setItem("localStorageCartData", JSON.stringify(cart))
-  // });
 
   // Custom component to wrap the PayPalButtons and handle currency changes
   const ButtonWrapper = ({ currency, showSpinner }) => {

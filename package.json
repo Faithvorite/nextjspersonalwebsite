@@ -31,6 +31,5 @@
   "devDependencies": {
     "eslint": "8.12.0",
     "eslint-config-next": "12.1.4"
-  },
-  "proxy" : "https://nextjspersonalartwebsite.vercel.app/api"
+  }
 }

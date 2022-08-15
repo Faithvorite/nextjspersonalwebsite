@@ -28,7 +28,7 @@ export const getServerSideProps = async (ctx) => {
     admin = true;
   }
 
-  const res = await axios.get("/paintings");
+  const res = await axios.get("https://nextjspersonalartwebsite.vercel.app/paintings");
   return {
     props: {
       gallery: res.data,
