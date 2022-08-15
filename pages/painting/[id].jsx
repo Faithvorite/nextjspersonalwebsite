@@ -4,9 +4,7 @@ import Image from "next/image";
 import axios from "axios"
 import { useDispatch } from 'react-redux';
 import { addPainting } from "../../redux/cartSlice";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { motion } from "framer-motion";
-import { useEffect } from 'react';
 import { AiOutlinePicture } from "react-icons/ai";
 
 
@@ -44,11 +42,6 @@ const Painting = ({ painting }) => {
   const handleClick = () => {
     dispatch(addPainting({...painting, extras, price, quantity}));
   };
-
-  // useEffect(() => {
-  //   window.localStorage.setItem('MY_APP_STATE', JSON.stringify({...painting, extras, price, quantity}));
-  // });
-  
 
   return (
   
@@ -114,7 +107,7 @@ const Painting = ({ painting }) => {
 
 export const getServerSideProps = async ({ params }) => {
   const res = await axios.get(
-    `https://nextjspersonalartwebsite.vercel.app/api/paintings/${params.id}`
+    `/paintings/${params.id}`
   );
   return {
     props: {
