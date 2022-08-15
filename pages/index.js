@@ -18,9 +18,9 @@ export default function Home({ gallery, admin }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Featured />
-      {<AddButton setClose={setClose} />}
+      {admin && <AddButton setClose={setClose} />}
       <Gallery gallery={gallery} />
-      {!close && <Add setClose={setClose} />}
+      {admin && !close && <Add setClose={setClose} />}
       <NewFeatured />
     </div>
   );
