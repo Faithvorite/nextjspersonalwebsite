@@ -14,7 +14,9 @@ const Index = ({ orders, paintings }) => {
       const res = await axios.delete(
         "https://nextjspersonalartwebsite.vercel.app/api/paintings/" + id
       );
-      setGallery(gallery.filter((painting) => painting._id !== id));
+      setGallery([
+        res.data,
+        ...gallery.filter((painting) => painting._id !== id)]);
     } catch (err) {
       console.log(err);
     }
